@@ -13,7 +13,7 @@ namespace Task1
         }
         public override string GetInfo()
         {
-            return type.ToString();
+            return base.GetInfo() + " " + type.ToString();
         }
     }
 }

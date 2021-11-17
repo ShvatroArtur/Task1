@@ -16,5 +16,10 @@ namespace Task1
         Butter,
         Custard
     }
+    public enum TypeChocolates
+    {
+        Stick,
+        Bar
+    }    
 
 }

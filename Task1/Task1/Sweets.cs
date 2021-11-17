@@ -6,13 +6,13 @@ namespace Task1
 {
     public abstract class Sweets
     {
-        private string name;       
-        private double weight;
-        private double sugar;
-        private double calories;
-        private double fat;
-        private double protein;
-        private double carbohydrate;
+        public string name;       
+        public double weight;
+        public double sugar;
+        public double calories;
+        public double fat;
+        public double protein;
+        public double carbohydrate;
 
 
         public Sweets(string name, double weight,double sugar,double calories, double fat,double protein, double carbohydrete) 
@@ -28,7 +28,10 @@ namespace Task1
 
        
 
-        public abstract string GetInfo();   
+        public virtual string GetInfo()
+        {
+            return name.ToString();
+        }   
 
 
     }
