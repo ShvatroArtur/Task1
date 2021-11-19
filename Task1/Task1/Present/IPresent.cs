@@ -9,6 +9,7 @@ namespace Task1
         void Add(Sweets swets);    
         double Weight();
         IEnumerable<Sweets> Sort(Func<Sweets, string> specification);
-        IEnumerable<Sweets> Find(double sugar1, double sugar2);          
+        IEnumerable<Sweets> FindSweets(double sugar1, double sugar2);
+        IEnumerable<Sweets> FindCandies(double sugar1, double sugar2);
     }
 }

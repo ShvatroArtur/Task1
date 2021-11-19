@@ -18,10 +18,16 @@ namespace Task1
 
         public double Weight() => items.Sum(n => n.weight);
 
-        public IEnumerable<Sweets> Sort(Func<Sweets, string> specification) => items.OrderBy(specification);        
+        public IEnumerable<Sweets> Sort(Func<Sweets, string> specification) => items.OrderBy(specification);
+        public IEnumerable<Sweets> SortCandies() => from i in items
+                                                    where (i.GetType() == typeof(Candies))
+                                                    orderby i.name select i ;
 
-        public IEnumerable<Sweets> Find(double sugar1, double sugar2) => from i in items
-                                                                         where (i.sugar >= sugar1) && (i.sugar <= sugar2)
+        public IEnumerable<Sweets> FindSweets(double minSugarWeith, double maxSugarWeith) => from i in items
+                                                                         where (i.sugar >= minSugarWeith) && (i.sugar <= maxSugarWeith)
+                                                                         select i;
+        public IEnumerable<Sweets> FindCandies(double minSugarWeith, double maxSugarWeith) => from i in items
+                                                                         where (i.GetType()==typeof(Candies))&&(i.sugar >= minSugarWeith) && (i.sugar <= maxSugarWeith)
                                                                          select i;
 
         public void ShowPresent(IEnumerable<Sweets> sweets)

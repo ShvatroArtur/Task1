@@ -13,8 +13,6 @@ namespace Task1
         public double fat;
         public double protein;
         public double carbohydrate;
-
-
         public Sweets(string name, double weight,double sugar,double calories, double fat,double protein, double carbohydrete) 
         {
             this.name = name;
@@ -24,15 +22,10 @@ namespace Task1
             this.fat = fat;
             this.protein = protein;
             this.carbohydrate = carbohydrate;
-        }
-
-       
-
+        }    
         public virtual string GetInfo()
         {
-            return name.ToString();
-        }   
-
-
+            return GetType()+" "+name.ToString();
+        }
     }
 }

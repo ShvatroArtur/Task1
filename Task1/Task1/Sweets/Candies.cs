@@ -6,14 +6,15 @@ namespace Task1
     public class Candies : Sweets
     {
         
-        private TypeCandies type;
-        public Candies(string _name, double _weight, double _sugar, double _calories, double _fat, double _protein, double _carbohydrete,TypeCandies _type) :base(_name,_weight,_sugar,_calories,_fat,_protein,_carbohydrete)
+        private string filling;
+        public Candies(string _name,double _weight,double _sugar,double _calories,double _fat,double _protein,double _carbohydrete,string _filling) 
+        :base(_name,_weight,_sugar,_calories,_fat,_protein,_carbohydrete)
         {
-            type = _type; 
+            filling = _filling; 
         }
         public override string GetInfo()
         {
-            return base.GetInfo() + " " + type.ToString();
+            return base.GetInfo() + " " + filling.ToString();
         }
     }
 }
