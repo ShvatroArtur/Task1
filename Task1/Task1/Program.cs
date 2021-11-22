@@ -1,5 +1,6 @@
 ﻿using System;
-
+using SweetsNamespace;
+using PresentNamespace;
 namespace Task1
 {
     class Program

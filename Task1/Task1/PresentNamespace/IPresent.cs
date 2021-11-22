@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using SweetsNamespace;
 
-namespace Task1
+namespace PresentNamespace
 {
     public interface IPresent
     {
