@@ -15,7 +15,7 @@ namespace SweetsNamespace
         }
         public override string GetInfo()
         {
-            return base.GetInfo()+" "+ filling.ToString();
+            return String.Join(" ",base.GetInfo(),filling.ToString());
         }
     }
 }

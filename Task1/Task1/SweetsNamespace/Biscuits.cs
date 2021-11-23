@@ -14,7 +14,7 @@ namespace SweetsNamespace
         }
         public override string GetInfo()
         {
-            return base.GetInfo() + " " + flourGrade.ToString();
+            return String.Join(" ",base.GetInfo(),flourGrade.ToString());
         }
     }
 }

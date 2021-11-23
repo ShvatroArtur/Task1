@@ -24,7 +24,7 @@ namespace SweetsNamespace
         }    
         public virtual string GetInfo()
         {
-            return GetType()+" "+name.ToString();
+            return String.Join(" ",GetType(),name.ToString());
         }
     }
 }
