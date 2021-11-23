@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using SweetsNamespace;
+using Task1.SweetsNamespace;
 
 namespace PresentNamespace
 {

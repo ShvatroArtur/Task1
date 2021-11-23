@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SweetsNamespace;
+using Task1.SweetsNamespace;
 
 namespace PresentNamespace
 {
@@ -17,17 +17,17 @@ namespace PresentNamespace
 
         public void Add(Sweets sweets) => items.Add(sweets);
 
-        public double Weight() => items.Sum(n => n.weight);
+        public double Weight() => items.Sum(n => n.Weight);
 
         public IEnumerable<Sweets> Sort(Func<Sweets, string> specification) => items.OrderBy(specification);
 
         public IEnumerable<Sweets> SortCandies(Func<Sweets, bool> predicate, Func<Sweets, string> keySelector) => items.Where(predicate).OrderBy(keySelector);
 
         public IEnumerable<Sweets> FindSweets(double minSugarWeith, double maxSugarWeith) => from i in items
-                                                                         where (i.sugar >= minSugarWeith) && (i.sugar <= maxSugarWeith)
+                                                                         where (i.Sugar >= minSugarWeith) && (i.Sugar <= maxSugarWeith)
                                                                          select i;
         public IEnumerable<Sweets> FindCandies(double minSugarWeith, double maxSugarWeith) => from i in items
-                                                                         where (i.GetType()==typeof(Candies))&&(i.sugar >= minSugarWeith) && (i.sugar <= maxSugarWeith)
+                                                                         where (i is Candies)&&(i.Sugar >= minSugarWeith) && (i.Sugar <= maxSugarWeith)
                                                                          select i;        
 
         public void ShowPresent(IEnumerable<Sweets> sweets)

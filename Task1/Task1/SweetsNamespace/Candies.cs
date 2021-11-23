@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-namespace SweetsNamespace
+namespace Task1.SweetsNamespace
 {
     public class Candies : Sweets
     {
