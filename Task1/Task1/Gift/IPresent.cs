@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Task1.SweetsNamespace;
+using Task1.Confection;
 
-namespace PresentNamespace
+namespace Task1.Gift
 {
     public interface IPresent
     {

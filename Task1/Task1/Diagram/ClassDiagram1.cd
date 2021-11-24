@@ -1,67 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Task1.SweetsNamespace.ChoclatesCandies" Collapsed="true">
-    <Position X="0.75" Y="5.25" Width="1.5" />
+  <Class Name="Task1.Confection.Sweets" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
-      <FileName>SweetsNamespace\ChoclatesCandies.cs</FileName>
+      <HashCode>AACAgAAAAIAAABAAAAAQAAQAACAMAEAgAACAACAAAAA=</HashCode>
+      <FileName>Confection\Sweets.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Task1.SweetsNamespace.Chocolates" Collapsed="true">
-    <Position X="4.75" Y="2.5" Width="1.5" />
+  <Class Name="Task1.Confection.NutsCandies">
+    <Position X="0.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAIAAAA=</HashCode>
-      <FileName>SweetsNamespace\Chocolates.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Task1.SweetsNamespace.NutsCandies" Collapsed="true">
-    <Position X="2.5" Y="5.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAgAAEAAAAAAAAAAAAA=</HashCode>
-      <FileName>SweetsNamespace\NutsCandies.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Task1.SweetsNamespace.Sweets" Collapsed="true">
-    <Position X="2.75" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AACAgAAAAIAAAAAAAAAAAAQAACAMAEAgAACAACAAAAA=</HashCode>
-      <FileName>SweetsNamespace\Sweets.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Task1.SweetsNamespace.Biscuits" Collapsed="true">
-    <Position X="2.75" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAgAAAAAAAAAAA=</HashCode>
-      <FileName>SweetsNamespace\Biscuits.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Task1.SweetsNamespace.Candies" Collapsed="true">
-    <Position X="0.75" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAIAAAA=</HashCode>
-      <FileName>SweetsNamespace\Candies.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Task1.SweetsNamespace.AlcoholCandies" Collapsed="true">
-    <Position X="4.25" Y="5.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAABAAAAAgAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
-      <FileName>SweetsNamespace\AlcoholCandies.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="PresentNamespace.Present" Collapsed="true">
-    <Position X="8.5" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAIAkAAAAAAACAAAACgQAAAAACAAEAAAAAAAAAAAAAA=</HashCode>
-      <FileName>PresentNamespace\Present.cs</FileName>
+      <HashCode>AAAABAAAAACAAAAAAAAAAAAAAAgAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Confection\NutsCandies.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="PresentNamespace.IPresent" Collapsed="true">
-    <Position X="8.25" Y="0.5" Width="1.5" />
+  <Class Name="Task1.Confection.Chocolates">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAIAAAA=</HashCode>
+      <FileName>Confection\Chocolates.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Task1.Confection.ChoclatesCandies">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Confection\ChoclatesCandies.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Task1.Confection.Candies">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAIAAAA=</HashCode>
+      <FileName>Confection\Candies.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Task1.Confection.Biscuits">
+    <Position X="4.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAgAAAAAAAAAAA=</HashCode>
+      <FileName>Confection\Biscuits.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Task1.Confection.AlcoholCandies">
+    <Position X="4.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAiAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Confection\AlcoholCandies.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Task1.Gift.Present">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAEAAAAAAACAAAACgQAAAAACAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Gift\Present.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Task1.ICocoa">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICocoa.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Task1.Gift.IPresent">
+    <Position X="9.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAEAAAAAAAAAAAACAQAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>PresentNamespace\IPresent.cs</FileName>
+      <FileName>Gift\IPresent.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

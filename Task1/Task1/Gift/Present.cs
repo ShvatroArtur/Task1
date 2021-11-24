@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Task1.SweetsNamespace;
+using Task1.Confection;
 
-namespace PresentNamespace
+namespace Task1.Gift
 {
     public class Present : IPresent
     {
@@ -21,7 +21,7 @@ namespace PresentNamespace
 
         public IEnumerable<Sweets> Sort(Func<Sweets, string> specification) => items.OrderBy(specification);
 
-        public IEnumerable<Sweets> SortCandies(Func<Sweets, bool> predicate, Func<Sweets, string> keySelector) => items.Where(predicate).OrderBy(keySelector);
+        public IEnumerable<Sweets> Sort(Func<Sweets, bool> predicate, Func<Sweets, string> keySelector) => items.Where(predicate).OrderBy(keySelector);
 
         public IEnumerable<Sweets> FindSweets(double minSugarWeith, double maxSugarWeith) => from i in items
                                                                          where (i.Sugar >= minSugarWeith) && (i.Sugar <= maxSugarWeith)
