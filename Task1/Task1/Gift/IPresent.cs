@@ -7,7 +7,7 @@ namespace Task1.Gift
 {
     public interface IPresent
     {
-        void Add(Sweets swets);    
+        void Add(Sweets sweets);    
         double Weight();
         IEnumerable<Sweets> Sort(Func<Sweets, string> specification);
         IEnumerable<Sweets> FindSweets(double minSugarWeith, double maxSugarWeith);

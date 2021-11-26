@@ -8,11 +8,11 @@ namespace Task1.Confection
     {
         private double cocoaAmount;
         private string typeaAlcohol;
-        public AlcoholCandies(string _name, string _package, double _weight, double _sugar, double _calories, double _fat, double _protein, double _carbohydrete, string _filling, double _cocoaAmount, string _typeaAlcohol)
-                       : base(_name, _package, _weight, _sugar, _calories, _fat, _protein, _carbohydrete, _filling)
+        public AlcoholCandies(string name, string package, double weight, double sugar, double calories, double fat, double protein, double carbohydrete, string filling, double cocoaAmount, string typeaAlcohol)
+                       : base(name, package, weight, sugar, calories, fat, protein, carbohydrete, filling)
         {
-            cocoaAmount = _cocoaAmount;
-            typeaAlcohol = _typeaAlcohol;
+            this.cocoaAmount = cocoaAmount;
+            this.typeaAlcohol = typeaAlcohol;
         }
         public override string GetInfo()
         {

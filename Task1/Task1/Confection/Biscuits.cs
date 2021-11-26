@@ -7,10 +7,10 @@ namespace Task1.Confection
     {
 
         private string flourGrade;
-        public Biscuits(string _name,string _package ,double _weight,double _sugar,double _calories,double _fat,double _protein,double _carbohydrete,string _flourGrade) : 
-        base(_name,_package,_weight, _sugar,_calories,_fat,_protein,_carbohydrete)
+        public Biscuits(string name, string package, double weight, double sugar, double calories, double fat, double protein, double carbohydrete, string flourGrade) : 
+        base(name, package, weight, sugar, calories, fat, protein, carbohydrete)
         {
-            flourGrade = _flourGrade;
+            this.flourGrade = flourGrade;
         }
         public override string GetInfo()
         {

@@ -7,10 +7,10 @@ namespace Task1.Confection
     {
         
         private string filling;
-        public Candies(string _name,  string _package, double _weight,double _sugar,double _calories,double _fat,double _protein,double _carbohydrete,string _filling) 
-        :base(_name, _package, _weight,_sugar,_calories,_fat,_protein,_carbohydrete)
+        public Candies(string name,  string package, double weight, double sugar, double calories, double fat, double protein, double carbohydrete, string filling) 
+        :base(name, package, weight, sugar, calories, fat, protein, carbohydrete)
         {
-            filling = _filling; 
+            this.filling = filling; 
         }
         public override string GetInfo()
         {

@@ -9,27 +9,20 @@ namespace Task1.Gift
     public class Present : IPresent
     {
         private List<Sweets> items;
-
         public Present()
         {
             items = new List<Sweets>();
         }
-
         public void Add(Sweets sweets) => items.Add(sweets);
-
         public double Weight() => items.Sum(n => n.Weight);
-
         public IEnumerable<Sweets> Sort(Func<Sweets, string> specification) => items.OrderBy(specification);
-
         public IEnumerable<Sweets> Sort(Func<Sweets, bool> predicate, Func<Sweets, string> keySelector) => items.Where(predicate).OrderBy(keySelector);
-
         public IEnumerable<Sweets> FindSweets(double minSugarWeith, double maxSugarWeith) => from i in items
                                                                          where (i.Sugar >= minSugarWeith) && (i.Sugar <= maxSugarWeith)
                                                                          select i;
         public IEnumerable<Sweets> FindCandies(double minSugarWeith, double maxSugarWeith) => from i in items
                                                                          where (i is Candies)&&(i.Sugar >= minSugarWeith) && (i.Sugar <= maxSugarWeith)
-                                                                         select i;        
-
+                                                                         select i;
         public void ShowPresent(IEnumerable<Sweets> sweets)
         {
             foreach (var i in sweets)
@@ -43,7 +36,5 @@ namespace Task1.Gift
             get {return items;}    
             private set {}
         }
-
-            
     }
 }

@@ -8,16 +8,16 @@ namespace Task1.Confection
     {
         private double cocoaAmount;
         private string typeNuts;
-        public NutsCandies(string _name, string _package, double _weight, double _sugar, double _calories, double _fat, double _protein, double _carbohydrete, string _filling, double _cocoaAmount, string _typeNuts)
-                       : base(_name, _package, _weight, _sugar, _calories, _fat, _protein, _carbohydrete, _filling)
+        public NutsCandies(string name, string package, double weight, double sugar, double calories, double fat, double protein, double carbohydrete, string filling, double cocoaAmount, string typeNuts)
+                       : base(name, package, weight, sugar, calories, fat, protein, carbohydrete, filling)
         {
-            cocoaAmount = _cocoaAmount;
-            typeNuts = _typeNuts;
+            this.cocoaAmount = cocoaAmount;
+            this.typeNuts = typeNuts;
         }
         public override string GetInfo()
         {
             return String.Join(" ", base.GetInfo(), cocoaAmount.ToString(),typeNuts.ToString());
         }
-        public double cocoaAmmount { get => cocoaAmmount; private set { } }
+        public double cocoaAmmount {get => cocoaAmmount; private set { }}
     }
 }

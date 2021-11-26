@@ -30,25 +30,21 @@ namespace Task1.Confection
         }
         public string Name
         {
-
             get { return name; }
             private set { }
         }
         public string Package
         {
-
             get { return package; }
             private set { }
         }
         public double Weight
         {
-
             get { return weight; }
             private set { }
         }
         public double Sugar
         {
-
             get { return sugar; }
             private set { }
         }

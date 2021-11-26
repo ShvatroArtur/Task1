@@ -7,16 +7,12 @@ namespace Task1.Confection
     public class ChoclatesCandies : Candies,ICocoa
     {
         private double cocoaAmount;
-        public ChoclatesCandies(string _name, string _package, double _weight, double _sugar, double _calories, double _fat, double _protein, double _carbohydrete, string _filling,double _cocoaAmount)
-                       : base(_name, _package, _weight, _sugar, _calories, _fat, _protein, _carbohydrete,_filling)
+        public ChoclatesCandies(string name, string package, double weight, double sugar, double calories, double fat, double protein, double carbohydrete, string filling, double cocoaAmount)
+                       : base(name, package, weight, sugar, calories, fat, protein, carbohydrete, filling)
         {
-            cocoaAmount = _cocoaAmount;
+            this.cocoaAmount = cocoaAmount;
         }
-
-        public double cocoaAmmount { get => cocoaAmmount; private set { } }
-
-        //public double cocoaAmmount { get =>cocoaAmount; private set; }
-
+        public double cocoaAmmount {get => cocoaAmmount; private set { }}
         public override string GetInfo()
         {
             return String.Join(" ", base.GetInfo(), cocoaAmount.ToString());
