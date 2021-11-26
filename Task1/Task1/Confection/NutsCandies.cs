@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
 namespace Task1.Confection
 {
     class NutsCandies:Candies,ICocoa
@@ -9,7 +8,7 @@ namespace Task1.Confection
         private double cocoaAmount;
         private string typeNuts;
         public NutsCandies(string name, string package, double weight, double sugar, double calories, double fat, double protein, double carbohydrete, string filling, double cocoaAmount, string typeNuts)
-                       : base(name, package, weight, sugar, calories, fat, protein, carbohydrete, filling)
+                          : base(name, package, weight, sugar, calories, fat, protein, carbohydrete, filling)
         {
             this.cocoaAmount = cocoaAmount;
             this.typeNuts = typeNuts;

@@ -10,8 +10,8 @@ namespace Task1.Confection
         public Chocolates(string name, string package, double weight, double sugar, double calories, double fat, double protein, double carbohydrete, string filling, double cocoaAmount) 
         : base(name, package, weight, sugar, calories, fat, protein, carbohydrete)
         {
-            filling = filling;
-            cocoaAmount = cocoaAmount;
+            this.filling = filling;
+            this.cocoaAmount = cocoaAmount;
         }
         public override string GetInfo()
         {

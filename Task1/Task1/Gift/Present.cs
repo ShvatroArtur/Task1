@@ -3,18 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Task1.Confection;
-
 namespace Task1.Gift
 {
-    public class Present : IPresent
+    public class Present: IPresent
     {
         private List<Sweets> items;
         public Present()
         {
             items = new List<Sweets>();
         }
-        public void Add(Sweets sweets) => items.Add(sweets);
         public double Weight() => items.Sum(n => n.Weight);
+        public void Add(Sweets sweets) => items.Add(sweets);       
         public IEnumerable<Sweets> Sort(Func<Sweets, string> specification) => items.OrderBy(specification);
         public IEnumerable<Sweets> Sort(Func<Sweets, bool> predicate, Func<Sweets, string> keySelector) => items.Where(predicate).OrderBy(keySelector);
         public IEnumerable<Sweets> FindSweets(double minSugarWeith, double maxSugarWeith) => from i in items
@@ -29,7 +28,6 @@ namespace Task1.Gift
             {
                 Console.WriteLine(i.GetInfo());
             }
-
         }
         public IEnumerable<Sweets> Items
         {
