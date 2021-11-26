@@ -20,22 +20,25 @@ namespace Task1
             present.Add(sweets4);
             present.Add(sweets5);
             present.Add(sweets6);
-            present.ShowPresent(present.Items);
+            ActionPresent actionPresent = new ActionPresent(present.Items);
+            actionPresent.ShowPresent();
             Console.WriteLine("--------Find sweets");
-            present.ShowPresent(present.FindSweets(90, 100));
+            actionPresent.FindSweets(90, 100);
+            actionPresent.ShowPresent();
             Console.WriteLine("--------Find candies");
-            present.ShowPresent(present.FindCandies(90, 140));
+            actionPresent.FindCandies(90, 140);
+            actionPresent.ShowPresent();
             Console.WriteLine("--------Sort sweets");
-            present.ShowPresent(present.Sort(x => x.Name));
+            actionPresent.Sort(x => x.Name);
+            actionPresent.ShowPresent();
             Console.WriteLine("--------Sort candies for name");
-            present.ShowPresent(present.Sort(x => x is Candies, x => x.Name));
+            actionPresent.Sort(x => x is Candies, x => x.Name);
+            actionPresent.ShowPresent();
             Console.WriteLine("--------Sort biscuits for Package");
-            present.ShowPresent(present.Sort(x => x is Biscuits, x => x.Package));
+            actionPresent.Sort(x => x is Biscuits, x => x.Package);
+            actionPresent.ShowPresent();
             Console.WriteLine("-------------------------------");
-            Console.WriteLine("Weigth = " + present.Weight());
-
-
+            Console.WriteLine("Weigth = " + actionPresent.Weight());
         }
-
     }
 }

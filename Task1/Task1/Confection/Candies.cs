@@ -6,8 +6,8 @@ namespace Task1.Confection
     public class Candies : Sweets
     { 
         private string filling;
-        public Candies(string name,  string package, double weight, double sugar, double calories, double fat, double protein, double carbohydrete, string filling) 
-        :base(name, package, weight, sugar, calories, fat, protein, carbohydrete)
+        public Candies(string name,  string package, double weight, double sugar, double calories, double fat, double protein, double carbohydrate, string filling) 
+        :base(name, package, weight, sugar, calories, fat, protein, carbohydrate)
         {
             this.filling = filling; 
         }

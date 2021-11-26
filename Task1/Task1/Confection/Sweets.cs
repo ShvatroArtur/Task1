@@ -13,7 +13,7 @@ namespace Task1.Confection
         private double fat;
         private double protein;
         private double carbohydrate;
-        public Sweets(string name, string package, double weight, double sugar, double calories, double fat, double protein, double carbohydrete)
+        public Sweets(string name, string package, double weight, double sugar, double calories, double fat, double protein, double carbohydrate)
         {
             this.name = name;
             this.weight = weight;

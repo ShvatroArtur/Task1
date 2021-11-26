@@ -7,8 +7,8 @@ namespace Task1.Confection
     {
         private string filling;
         private double cocoaAmount;
-        public Chocolates(string name, string package, double weight, double sugar, double calories, double fat, double protein, double carbohydrete, string filling, double cocoaAmount) 
-        : base(name, package, weight, sugar, calories, fat, protein, carbohydrete)
+        public Chocolates(string name, string package, double weight, double sugar, double calories, double fat, double protein, double carbohydrate, string filling, double cocoaAmount) 
+        : base(name, package, weight, sugar, calories, fat, protein, carbohydrate)
         {
             this.filling = filling;
             this.cocoaAmount = cocoaAmount;

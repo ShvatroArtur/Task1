@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Task1.Confection;
 namespace Task1.Gift
 {
@@ -11,28 +10,12 @@ namespace Task1.Gift
         public Present()
         {
             items = new List<Sweets>();
-        }
-        public double Weight() => items.Sum(n => n.Weight);
-        public void Add(Sweets sweets) => items.Add(sweets);       
-        public IEnumerable<Sweets> Sort(Func<Sweets, string> specification) => items.OrderBy(specification);
-        public IEnumerable<Sweets> Sort(Func<Sweets, bool> predicate, Func<Sweets, string> keySelector) => items.Where(predicate).OrderBy(keySelector);
-        public IEnumerable<Sweets> FindSweets(double minSugarWeith, double maxSugarWeith) => from i in items
-                                                                         where (i.Sugar >= minSugarWeith) && (i.Sugar <= maxSugarWeith)
-                                                                         select i;
-        public IEnumerable<Sweets> FindCandies(double minSugarWeith, double maxSugarWeith) => from i in items
-                                                                         where (i is Candies)&&(i.Sugar >= minSugarWeith) && (i.Sugar <= maxSugarWeith)
-                                                                         select i;
-        public void ShowPresent(IEnumerable<Sweets> sweets)
-        {
-            foreach (var i in sweets)
-            {
-                Console.WriteLine(i.GetInfo());
-            }
-        }
+        }       
+        public void Add(Sweets sweets) => items.Add(sweets);        
         public IEnumerable<Sweets> Items
         {
-            get {return items;}    
-            private set {}
-        }
+            get { return items; }
+            private set { }
+        }        
     }
 }

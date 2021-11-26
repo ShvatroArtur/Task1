@@ -6,8 +6,8 @@ namespace Task1.Confection
     public class Biscuits : Sweets
     {
         private string flourGrade;
-        public Biscuits(string name, string package, double weight, double sugar, double calories, double fat, double protein, double carbohydrete, string flourGrade) : 
-        base(name, package, weight, sugar, calories, fat, protein, carbohydrete)
+        public Biscuits(string name, string package, double weight, double sugar, double calories, double fat, double protein, double carbohydrate, string flourGrade) : 
+        base(name, package, weight, sugar, calories, fat, protein, carbohydrate)
         {
             this.flourGrade = flourGrade;
         }
