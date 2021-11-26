@@ -7,7 +7,7 @@ namespace Task1.Gift
 {
     class ActionPresent:IActionPresent
     {
-        public IEnumerable<Sweets> items;       
+        private IEnumerable<Sweets> items;       
         public ActionPresent(IEnumerable<Sweets> items)
         {
             this.items = items;
